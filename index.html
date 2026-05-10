@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio pessoal</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a class="section-link" href="#sobre">Sobre mim</a></li>
+                <li><a class="section-link" href="#formacao">Formação</a></li>
+                <li><a class="section-link" href="#portfolio">Portfólio</a></li>
+                <li><a class="section-link" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <span class="section-title">Sobre mim</span>
+            <p>Bem-vindo(a) ao meu portfólio!<br>Meu nome é Matheus Farias e tenho 22 anos. Atualmente trabalho como suporte técnico em um ISP. Estudo Ciência da Computação e sou apaixonado por técnologia, especialmente cybersecurity.</p>
+        </section>
+
+        <section id="formacao">
+            <span class="section-title">Formação</span>
+            <ul>
+                <li>Cursando Ciência da Computação - Centro Universitário Internacional, Uninter (2025-2029)</li>
+                <li>Curso C#, .Net e Programação Orientada a Objetos - Udemy (2026)</li>
+                <li>Idiomas: Inglês (básico)</li>
+            </ul>
+        </section>
+
+        <section id="portfolio">
+            <span class="section-title">Portfólio</span>
+            <div class="projetos">
+                <div class="projeto">
+                    <span class="projeto-title">Projeto 1: Site de Portfólio</span>
+                    <span class="projeto-descricao"><br>Desenvolvi um site de portfólio pessoal utilizando HTML, CSS e JavaScript para apresentar meus projetos e habilidades.</span>
+                    <span id="repository-github"><br>Repositório no GitHub: <a href="https://github.com/matheusfarias/portfolio" target="_blank">https://github.com/matheusfarias/portfolio</a></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <span class="section-title">Contato</span>
+            <p>Preencha os campos abaixo para entrar em contato comigo:</p>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit" onclick="alert('Chamar função de envio')">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
